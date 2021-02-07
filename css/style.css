@@ -1,0 +1,153 @@
+/* ui design here  */
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin:0px;
+}
+header{
+    color:#fcfcfc;  
+    background-color: #0362cf;
+}
+nav{
+    display:flex;
+    justify-content: space-between;
+}
+nav ul{
+    display: flex;
+    list-style: none;
+}
+.heading,
+nav ul li{
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    cursor: pointer;  
+}
+main{
+    background-color: #d8d8d8;
+    min-height: 100vh;
+}
+
+/* search start here  */
+.search-Field{
+    display: flex;
+    padding:20px;
+    justify-content: center;
+}
+input[type=text]{
+    font-size: 1.5rem;
+    width:50%;
+    outline: none;
+    border:none;
+    padding:5px 20px;
+    margin:10px 0px;
+}
+.search-btn{
+    font-size: 1.5rem;
+    width:20%;
+    outline: none;
+    border:none;
+    padding:5px 20px;
+    margin:10px 0px;
+    text-transform: uppercase;
+    background-color: #00008b;
+    color:white;
+}
+.search-btn:hover{
+    background-color:  #4444ee;
+}
+.search-result{
+    font-weight: 300;
+    text-transform: uppercase;
+    font-size: 40px;
+    text-align: center;
+    padding:20px;
+}
+/* meals items grid style in home page  */
+.meals-list{
+    text-align: center;
+    margin:0% 6%;
+}
+.meals-grid-list{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    cursor: pointer;
+}
+.meals-item{
+    /* padding:20px 0px; */
+    background-color: #b6b3b3;
+    width:290px;
+
+    margin:10px;
+
+}
+.meals-item img{
+    width:290px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.meals-title{
+    color:rgb(5, 5, 5);
+    font-size: 12px;
+    padding: 15px 0;
+    text-transform: uppercase;
+}
+.meals-details{
+    text-align: center;
+}
+.meals-details-heading{
+    background-color: thistle;
+    padding:10px;
+    margin: 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+.meals-title-details{
+    color:black;
+    padding:20px 20px;
+    background-color: blanchedalmond;
+    font-size: 20px;
+}
+.signle-food{
+    width:600px;
+    margin:0 auto;
+}
+.signle-food img{
+    width:100%;
+}
+.ingerient{
+    margin:20px 0px;
+    font-size: 20px;
+}
+.ingerient h3{
+    padding:10px;
+    margin:10px;
+}
+
+.desc{
+    padding: 20px;
+    margin: 10px 20px;
+    /* width:50%; */
+}
+.notFound{
+    color:black;
+    padding:20px;
+    background-color: orange;
+    font-size: 25px;
+
+}
+#detailsDiv{
+    display:none;
+}
+.showMe{
+    display:block;
+}
+footer{
+    background-color: black;
+    padding:20px 0px;
+    color:white;
+    text-align: center;
+    font-size: 15px;
+}
